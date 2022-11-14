@@ -11,7 +11,9 @@
     <script src="https://unpkg.com/@vkontakte/vk-bridge/dist/browser.min.js"></script>
     <script>
       console.log("ddfgdfdfgfdfdgdfgfdhgjkfdhjkdfgkdfhg");
-     
+      vkBridge.send("VKWebAppInit", {});
+      vkBridge.send('VKWebAppGetUserInfo').then(_info =>{
+          console.log(_info);
     </script>
     <script>
       var gameInstance = UnityLoader.instantiate("gameContainer", "Build/Новая папка.json", {onProgress: UnityProgress});
