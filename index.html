@@ -32,27 +32,6 @@
       }
       
     </script>
-    
-    <script>
-      const Banner = () => {
-  
-        const [bannerData, setBannerData] = useState({});
-
-        useEffect(() => {
-          bridge.send('VKWebAppGetAds')
-            .then((bannerInfo) => {
-              setBannerData(bannerInfo);
-            });
-         }, []);
-
-         if (!bannerData) {
-           return null;
-         }
-
-         return <PromoBanner bannerData={bannerData} />;
-       }
-    </script>
-    
     <script>
       var gameInstance = UnityLoader.instantiate("gameContainer", "Build/Новая папка.json", {onProgress: UnityProgress});
     </script>
