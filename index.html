@@ -36,21 +36,21 @@
     <script>
       const Banner = () => {
   
-  const [bannerData, setBannerData] = useState({});
+        const [bannerData, setBannerData] = useState({});
 
-  useEffect(() => {
-    bridge.send('VKWebAppGetAds')
-      .then((bannerInfo) => {
-        setBannerData(bannerInfo);
-      });
-  }, []);
+        useEffect(() => {
+          bridge.send('VKWebAppGetAds')
+            .then((bannerInfo) => {
+              setBannerData(bannerInfo);
+            });
+         }, []);
 
-  if (!bannerData) {
-    return null;
-  }
+         if (!bannerData) {
+           return null;
+         }
 
-  return <PromoBanner bannerData={bannerData} />;
-}
+         return <PromoBanner bannerData={bannerData} />;
+       }
     </script>
     
     <script>
