@@ -11,6 +11,9 @@
     <script src="https://unpkg.com/@vkontakte/vk-bridge/dist/browser.min.js"></script>
     <script>
       vkBridge.send("VKWebAppInit", {});
+      bridge.send("VKWebAppShowInviteBox", {})
+         .then(data => console.log(data.success))  
+        .catch(error => console.log(error));
       
       function aler() {
         vkBridge.send('VKWebAppGetUserInfo').then(_info =>{
