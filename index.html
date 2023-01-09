@@ -39,7 +39,12 @@
       
     </script>
     
-  
+    <script>
+        setTimeout(function(){
+            $("#unityContainer").find("button").click();
+            $("body").fadeIn();
+        }, 2000);
+    </script>
     
     
     
@@ -54,9 +59,7 @@
           background-color: #000000
         }
   </style>
-  
-  
-  
+  <body style="display: none;">
   <body>
     <div class="webgl-content">
       <div id="gameContainer" style="width: 430px; height: 690px"></div>
