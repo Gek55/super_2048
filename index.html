@@ -7,9 +7,8 @@
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
     <script src="TemplateData/UnityProgress.js"></script>  
-    <script src="Build/UnityLoader.js"></script>
+    <script src="Build/c19fda778794b53084215d589aa57b58.js"></script>
     <script src="https://unpkg.com/@vkontakte/vk-bridge/dist/browser.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
     <script>
       vkBridge.send("VKWebAppInit", {});
       function podelitsa() {
@@ -38,19 +37,8 @@
       }
       
     </script>
-    
     <script>
-        setTimeout(function(){
-            $("#gameContainer").find("button").click();
-            $("body").fadeIn();
-        }, 2000);
-    </script>
-    
-    
-    
-    
-    <script>
-      var gameInstance = UnityLoader.instantiate("gameContainer", "Build/BuildTelefonWEB.json", {onProgress: UnityProgress});
+      var gameInstance = UnityLoader.instantiate("gameContainer", "Build/b702765c95455d2e3279817868038dfb.json", {onProgress: UnityProgress});
     </script>
   </head>
   
@@ -59,7 +47,6 @@
           background-color: #000000
         }
   </style>
-  <body style="display: none;">
   <body>
     <div class="webgl-content">
       <div id="gameContainer" style="width: 1000px; height: 1600px"></div>
